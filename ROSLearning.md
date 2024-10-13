@@ -98,6 +98,21 @@ rosrun rqt_graph rqt_graph
 # ROS c2通信机制
 话题通信(发布订阅) 服务通信(请求相应) 参数服务器(参数共享)
 
+修改xml文件和cmakelist
+1. xml
+     - <build_export_depend>message_runtime</build_export_depend>
+     - <build_depend>message_generation</build_depend>
+     - <exec_depend>message_runtime</exec_depend>
+
+2. cmakelist
+     - add_*_files //通行类型文件
+     - generation_messages //生成ros消息、动作和服务
+     - catkin_package //ros依赖包
+     - include_directories //包含头文件(类似.vscode中c_cpp_propreties)
+     - add_executable //程序生成的名字
+     - add_dependencies //确保必要的消息服务和动作已生成
+     - target_link_libraries //链接动态库
+
 ## 话题通信
 master管理者 talker发布者 listener订阅者
 talker(topic+foo)和listener(topic)借助master进行连接，后续talker和listener直接联系，并有RCP地址联系转为TCP地址联系  
@@ -129,3 +144,21 @@ setlocale(LC_ALL,"") 避免中文乱码
 
 #### 注意
 数据丢失 在roscore注册完成前发送数据导致数据丢失(注册后加入sleep)
+
+## 服务通信
+
+- master管理者(平台，中间商)
+- server服务端(服务提供者)
+- client客户端(服务获得者)
+
+- 客户端发起请求时服务端已经启动
+- 客户端和服务端都可以存在多个
+
+server和client
+### 自定义srv
+服务通信中，数据分成两部分，请求与响应，在 srv 文件中请求和响应使用---分割
+服务通信的回调函数是bool类型，处理成功与失败
+
+
+
+调用时 source->rosrun->source->rosservice

@@ -249,6 +249,370 @@ doxygen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/doxygen.dir/build.make CMakeFiles/doxygen.dir/build
 .PHONY : doxygen/fast
 
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_cpp
+
+# Build rule for target.
+roscpp_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 roscpp_generate_messages_cpp
+.PHONY : roscpp_generate_messages_cpp
+
+# fast build rule for target.
+roscpp_generate_messages_cpp/fast:
+	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make server/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+.PHONY : roscpp_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_eus
+
+# Build rule for target.
+roscpp_generate_messages_eus: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 roscpp_generate_messages_eus
+.PHONY : roscpp_generate_messages_eus
+
+# fast build rule for target.
+roscpp_generate_messages_eus/fast:
+	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/roscpp_generate_messages_eus.dir/build.make server/CMakeFiles/roscpp_generate_messages_eus.dir/build
+.PHONY : roscpp_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_lisp
+
+# Build rule for target.
+roscpp_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 roscpp_generate_messages_lisp
+.PHONY : roscpp_generate_messages_lisp
+
+# fast build rule for target.
+roscpp_generate_messages_lisp/fast:
+	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make server/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+.PHONY : roscpp_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_nodejs
+
+# Build rule for target.
+roscpp_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 roscpp_generate_messages_nodejs
+.PHONY : roscpp_generate_messages_nodejs
+
+# fast build rule for target.
+roscpp_generate_messages_nodejs/fast:
+	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make server/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+.PHONY : roscpp_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_py
+
+# Build rule for target.
+roscpp_generate_messages_py: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 roscpp_generate_messages_py
+.PHONY : roscpp_generate_messages_py
+
+# fast build rule for target.
+roscpp_generate_messages_py/fast:
+	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/roscpp_generate_messages_py.dir/build.make server/CMakeFiles/roscpp_generate_messages_py.dir/build
+.PHONY : roscpp_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_cpp
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_cpp
+.PHONY : rosgraph_msgs_generate_messages_cpp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_cpp/fast:
+	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make server/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_eus
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_eus
+.PHONY : rosgraph_msgs_generate_messages_eus
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_eus/fast:
+	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make server/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+.PHONY : rosgraph_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_lisp
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_lisp
+.PHONY : rosgraph_msgs_generate_messages_lisp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_lisp/fast:
+	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make server/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_nodejs
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_nodejs
+.PHONY : rosgraph_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_nodejs/fast:
+	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make server/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+.PHONY : rosgraph_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_py
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_py
+.PHONY : rosgraph_msgs_generate_messages_py
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_py/fast:
+	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make server/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+.PHONY : rosgraph_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_cpp
+
+# Build rule for target.
+std_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 std_msgs_generate_messages_cpp
+.PHONY : std_msgs_generate_messages_cpp
+
+# fast build rule for target.
+std_msgs_generate_messages_cpp/fast:
+	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make server/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+.PHONY : std_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_eus
+
+# Build rule for target.
+std_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 std_msgs_generate_messages_eus
+.PHONY : std_msgs_generate_messages_eus
+
+# fast build rule for target.
+std_msgs_generate_messages_eus/fast:
+	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make server/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+.PHONY : std_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_lisp
+
+# Build rule for target.
+std_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 std_msgs_generate_messages_lisp
+.PHONY : std_msgs_generate_messages_lisp
+
+# fast build rule for target.
+std_msgs_generate_messages_lisp/fast:
+	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make server/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+.PHONY : std_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_nodejs
+
+# Build rule for target.
+std_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 std_msgs_generate_messages_nodejs
+.PHONY : std_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+std_msgs_generate_messages_nodejs/fast:
+	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make server/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+.PHONY : std_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_py
+
+# Build rule for target.
+std_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 std_msgs_generate_messages_py
+.PHONY : std_msgs_generate_messages_py
+
+# fast build rule for target.
+std_msgs_generate_messages_py/fast:
+	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/std_msgs_generate_messages_py.dir/build.make server/CMakeFiles/std_msgs_generate_messages_py.dir/build
+.PHONY : std_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named server_generate_messages
+
+# Build rule for target.
+server_generate_messages: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server_generate_messages
+.PHONY : server_generate_messages
+
+# fast build rule for target.
+server_generate_messages/fast:
+	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/server_generate_messages.dir/build.make server/CMakeFiles/server_generate_messages.dir/build
+.PHONY : server_generate_messages/fast
+
+#=============================================================================
+# Target rules for targets named _server_generate_messages_check_deps_addInt
+
+# Build rule for target.
+_server_generate_messages_check_deps_addInt: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _server_generate_messages_check_deps_addInt
+.PHONY : _server_generate_messages_check_deps_addInt
+
+# fast build rule for target.
+_server_generate_messages_check_deps_addInt/fast:
+	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/_server_generate_messages_check_deps_addInt.dir/build.make server/CMakeFiles/_server_generate_messages_check_deps_addInt.dir/build
+.PHONY : _server_generate_messages_check_deps_addInt/fast
+
+#=============================================================================
+# Target rules for targets named server_generate_messages_cpp
+
+# Build rule for target.
+server_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server_generate_messages_cpp
+.PHONY : server_generate_messages_cpp
+
+# fast build rule for target.
+server_generate_messages_cpp/fast:
+	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/server_generate_messages_cpp.dir/build.make server/CMakeFiles/server_generate_messages_cpp.dir/build
+.PHONY : server_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named server_gencpp
+
+# Build rule for target.
+server_gencpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server_gencpp
+.PHONY : server_gencpp
+
+# fast build rule for target.
+server_gencpp/fast:
+	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/server_gencpp.dir/build.make server/CMakeFiles/server_gencpp.dir/build
+.PHONY : server_gencpp/fast
+
+#=============================================================================
+# Target rules for targets named server_generate_messages_eus
+
+# Build rule for target.
+server_generate_messages_eus: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server_generate_messages_eus
+.PHONY : server_generate_messages_eus
+
+# fast build rule for target.
+server_generate_messages_eus/fast:
+	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/server_generate_messages_eus.dir/build.make server/CMakeFiles/server_generate_messages_eus.dir/build
+.PHONY : server_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named server_geneus
+
+# Build rule for target.
+server_geneus: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server_geneus
+.PHONY : server_geneus
+
+# fast build rule for target.
+server_geneus/fast:
+	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/server_geneus.dir/build.make server/CMakeFiles/server_geneus.dir/build
+.PHONY : server_geneus/fast
+
+#=============================================================================
+# Target rules for targets named server_generate_messages_lisp
+
+# Build rule for target.
+server_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server_generate_messages_lisp
+.PHONY : server_generate_messages_lisp
+
+# fast build rule for target.
+server_generate_messages_lisp/fast:
+	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/server_generate_messages_lisp.dir/build.make server/CMakeFiles/server_generate_messages_lisp.dir/build
+.PHONY : server_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named server_genlisp
+
+# Build rule for target.
+server_genlisp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server_genlisp
+.PHONY : server_genlisp
+
+# fast build rule for target.
+server_genlisp/fast:
+	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/server_genlisp.dir/build.make server/CMakeFiles/server_genlisp.dir/build
+.PHONY : server_genlisp/fast
+
+#=============================================================================
+# Target rules for targets named server_generate_messages_nodejs
+
+# Build rule for target.
+server_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server_generate_messages_nodejs
+.PHONY : server_generate_messages_nodejs
+
+# fast build rule for target.
+server_generate_messages_nodejs/fast:
+	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/server_generate_messages_nodejs.dir/build.make server/CMakeFiles/server_generate_messages_nodejs.dir/build
+.PHONY : server_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named server_gennodejs
+
+# Build rule for target.
+server_gennodejs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server_gennodejs
+.PHONY : server_gennodejs
+
+# fast build rule for target.
+server_gennodejs/fast:
+	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/server_gennodejs.dir/build.make server/CMakeFiles/server_gennodejs.dir/build
+.PHONY : server_gennodejs/fast
+
+#=============================================================================
+# Target rules for targets named server_generate_messages_py
+
+# Build rule for target.
+server_generate_messages_py: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server_generate_messages_py
+.PHONY : server_generate_messages_py
+
+# fast build rule for target.
+server_generate_messages_py/fast:
+	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/server_generate_messages_py.dir/build.make server/CMakeFiles/server_generate_messages_py.dir/build
+.PHONY : server_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named server_genpy
+
+# Build rule for target.
+server_genpy: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server_genpy
+.PHONY : server_genpy
+
+# fast build rule for target.
+server_genpy/fast:
+	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/server_genpy.dir/build.make server/CMakeFiles/server_genpy.dir/build
+.PHONY : server_genpy/fast
+
+#=============================================================================
+# Target rules for targets named server
+
+# Build rule for target.
+server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server
+.PHONY : server
+
+# fast build rule for target.
+server/fast:
+	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/build
+.PHONY : server/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -263,11 +627,39 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... GMock"
+	@echo "... _server_generate_messages_check_deps_addInt"
 	@echo "... clean_test_results"
 	@echo "... download_extra_data"
 	@echo "... doxygen"
+	@echo "... roscpp_generate_messages_cpp"
+	@echo "... roscpp_generate_messages_eus"
+	@echo "... roscpp_generate_messages_lisp"
+	@echo "... roscpp_generate_messages_nodejs"
+	@echo "... roscpp_generate_messages_py"
+	@echo "... rosgraph_msgs_generate_messages_cpp"
+	@echo "... rosgraph_msgs_generate_messages_eus"
+	@echo "... rosgraph_msgs_generate_messages_lisp"
+	@echo "... rosgraph_msgs_generate_messages_nodejs"
+	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... run_tests"
+	@echo "... server_gencpp"
+	@echo "... server_generate_messages"
+	@echo "... server_generate_messages_cpp"
+	@echo "... server_generate_messages_eus"
+	@echo "... server_generate_messages_lisp"
+	@echo "... server_generate_messages_nodejs"
+	@echo "... server_generate_messages_py"
+	@echo "... server_geneus"
+	@echo "... server_genlisp"
+	@echo "... server_gennodejs"
+	@echo "... server_genpy"
+	@echo "... std_msgs_generate_messages_cpp"
+	@echo "... std_msgs_generate_messages_eus"
+	@echo "... std_msgs_generate_messages_lisp"
+	@echo "... std_msgs_generate_messages_nodejs"
+	@echo "... std_msgs_generate_messages_py"
 	@echo "... tests"
+	@echo "... server"
 .PHONY : help
 
 
