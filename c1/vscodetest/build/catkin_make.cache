@@ -1,0 +1,2 @@
+vscodetest
+-DCATKIN_DEVEL_PREFIX=/home/jquark/ROS/vscodetest/devel -DCMAKE_INSTALL_PREFIX=/home/jquark/ROS/vscodetest/install -G Unix Makefiles

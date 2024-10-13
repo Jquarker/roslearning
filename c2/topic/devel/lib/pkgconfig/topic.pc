@@ -1,0 +1,8 @@
+prefix=/home/jquark/ROS/c2/topic/devel
+
+Name: topic
+Description: Description of topic
+Version: 0.0.0
+Cflags: -I/home/jquark/ROS/c2/topic/devel/include
+Libs: -L${prefix}/lib 
+Requires: roscpp rospy std_msgs

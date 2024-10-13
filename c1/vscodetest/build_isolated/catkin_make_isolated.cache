@@ -1,0 +1,2 @@
+
+-DCMAKE_BUILD_TYPE=RelWithDebInfo -G Unix Makefiles -DCATKIN_DEVEL_PREFIX=/home/jquark/ROS/vscodetest/devel_isolated -DCMAKE_INSTALL_PREFIX=/home/jquark/ROS/vscodetest/install_isolated

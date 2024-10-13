@@ -1,0 +1,8 @@
+prefix=/home/jquark/ROS/vscodetest/install
+
+Name: vscodetest
+Description: Description of vscodetest
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
