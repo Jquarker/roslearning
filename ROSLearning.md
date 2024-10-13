@@ -98,7 +98,7 @@ rosrun rqt_graph rqt_graph
 # ROS c2通信机制
 话题通信(发布订阅) 服务通信(请求相应) 参数服务器(参数共享)
 
-修改xml文件和cmakelist
+## 修改xml文件和cmakelist
 1. xml
      - <build_export_depend>message_runtime</build_export_depend>
      - <build_depend>message_generation</build_depend>
@@ -159,6 +159,8 @@ server和client
 服务通信中，数据分成两部分，请求与响应，在 srv 文件中请求和响应使用---分割
 服务通信的回调函数是bool类型，处理成功与失败
 
-
-
 调用时 source->rosrun->source->rosservice
+
+借助argc和argv实现优化实现，启动程序时附带参数
+atoi 字符串转换为整型
+
