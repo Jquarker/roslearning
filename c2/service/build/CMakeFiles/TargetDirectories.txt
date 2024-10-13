@@ -38,7 +38,8 @@
 /home/jquark/ROS/c2/service/build/server/CMakeFiles/server_gennodejs.dir
 /home/jquark/ROS/c2/service/build/server/CMakeFiles/server_generate_messages_py.dir
 /home/jquark/ROS/c2/service/build/server/CMakeFiles/server_genpy.dir
-/home/jquark/ROS/c2/service/build/server/CMakeFiles/server.dir
+/home/jquark/ROS/c2/service/build/server/CMakeFiles/server_server.dir
+/home/jquark/ROS/c2/service/build/server/CMakeFiles/server_client.dir
 /home/jquark/ROS/c2/service/build/server/CMakeFiles/test.dir
 /home/jquark/ROS/c2/service/build/server/CMakeFiles/edit_cache.dir
 /home/jquark/ROS/c2/service/build/server/CMakeFiles/rebuild_cache.dir

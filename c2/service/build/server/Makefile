@@ -550,25 +550,63 @@ server_genpy/fast:
 .PHONY : server_genpy/fast
 
 # Convenience name for target.
-server/CMakeFiles/server.dir/rule:
-	cd /home/jquark/ROS/c2/service/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server/CMakeFiles/server.dir/rule
-.PHONY : server/CMakeFiles/server.dir/rule
+server/CMakeFiles/server_server.dir/rule:
+	cd /home/jquark/ROS/c2/service/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server/CMakeFiles/server_server.dir/rule
+.PHONY : server/CMakeFiles/server_server.dir/rule
 
 # Convenience name for target.
-server: server/CMakeFiles/server.dir/rule
-.PHONY : server
+server_server: server/CMakeFiles/server_server.dir/rule
+.PHONY : server_server
 
 # fast build rule for target.
-server/fast:
-	cd /home/jquark/ROS/c2/service/build && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/build
-.PHONY : server/fast
+server_server/fast:
+	cd /home/jquark/ROS/c2/service/build && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/server_server.dir/build.make server/CMakeFiles/server_server.dir/build
+.PHONY : server_server/fast
+
+# Convenience name for target.
+server/CMakeFiles/server_client.dir/rule:
+	cd /home/jquark/ROS/c2/service/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server/CMakeFiles/server_client.dir/rule
+.PHONY : server/CMakeFiles/server_client.dir/rule
+
+# Convenience name for target.
+server_client: server/CMakeFiles/server_client.dir/rule
+.PHONY : server_client
+
+# fast build rule for target.
+server_client/fast:
+	cd /home/jquark/ROS/c2/service/build && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/server_client.dir/build.make server/CMakeFiles/server_client.dir/build
+.PHONY : server_client/fast
+
+src/client.o: src/client.cpp.o
+.PHONY : src/client.o
+
+# target to build an object file
+src/client.cpp.o:
+	cd /home/jquark/ROS/c2/service/build && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/server_client.dir/build.make server/CMakeFiles/server_client.dir/src/client.cpp.o
+.PHONY : src/client.cpp.o
+
+src/client.i: src/client.cpp.i
+.PHONY : src/client.i
+
+# target to preprocess a source file
+src/client.cpp.i:
+	cd /home/jquark/ROS/c2/service/build && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/server_client.dir/build.make server/CMakeFiles/server_client.dir/src/client.cpp.i
+.PHONY : src/client.cpp.i
+
+src/client.s: src/client.cpp.s
+.PHONY : src/client.s
+
+# target to generate assembly for a file
+src/client.cpp.s:
+	cd /home/jquark/ROS/c2/service/build && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/server_client.dir/build.make server/CMakeFiles/server_client.dir/src/client.cpp.s
+.PHONY : src/client.cpp.s
 
 src/server.o: src/server.cpp.o
 .PHONY : src/server.o
 
 # target to build an object file
 src/server.cpp.o:
-	cd /home/jquark/ROS/c2/service/build && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/src/server.cpp.o
+	cd /home/jquark/ROS/c2/service/build && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/server_server.dir/build.make server/CMakeFiles/server_server.dir/src/server.cpp.o
 .PHONY : src/server.cpp.o
 
 src/server.i: src/server.cpp.i
@@ -576,7 +614,7 @@ src/server.i: src/server.cpp.i
 
 # target to preprocess a source file
 src/server.cpp.i:
-	cd /home/jquark/ROS/c2/service/build && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/src/server.cpp.i
+	cd /home/jquark/ROS/c2/service/build && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/server_server.dir/build.make server/CMakeFiles/server_server.dir/src/server.cpp.i
 .PHONY : src/server.cpp.i
 
 src/server.s: src/server.cpp.s
@@ -584,7 +622,7 @@ src/server.s: src/server.cpp.s
 
 # target to generate assembly for a file
 src/server.cpp.s:
-	cd /home/jquark/ROS/c2/service/build && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/src/server.cpp.s
+	cd /home/jquark/ROS/c2/service/build && $(MAKE) $(MAKESILENT) -f server/CMakeFiles/server_server.dir/build.make server/CMakeFiles/server_server.dir/src/server.cpp.s
 .PHONY : src/server.cpp.s
 
 # Help Target
@@ -627,7 +665,11 @@ help:
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
-	@echo "... server"
+	@echo "... server_client"
+	@echo "... server_server"
+	@echo "... src/client.o"
+	@echo "... src/client.i"
+	@echo "... src/client.s"
 	@echo "... src/server.o"
 	@echo "... src/server.i"
 	@echo "... src/server.s"

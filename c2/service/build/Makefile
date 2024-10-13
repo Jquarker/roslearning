@@ -601,17 +601,30 @@ server_genpy/fast:
 .PHONY : server_genpy/fast
 
 #=============================================================================
-# Target rules for targets named server
+# Target rules for targets named server_server
 
 # Build rule for target.
-server: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server
-.PHONY : server
+server_server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server_server
+.PHONY : server_server
 
 # fast build rule for target.
-server/fast:
-	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/build
-.PHONY : server/fast
+server_server/fast:
+	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/server_server.dir/build.make server/CMakeFiles/server_server.dir/build
+.PHONY : server_server/fast
+
+#=============================================================================
+# Target rules for targets named server_client
+
+# Build rule for target.
+server_client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server_client
+.PHONY : server_client
+
+# fast build rule for target.
+server_client/fast:
+	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/server_client.dir/build.make server/CMakeFiles/server_client.dir/build
+.PHONY : server_client/fast
 
 # Help Target
 help:
@@ -659,7 +672,8 @@ help:
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... tests"
-	@echo "... server"
+	@echo "... server_client"
+	@echo "... server_server"
 .PHONY : help
 
 

@@ -86,7 +86,8 @@ clean: server/clean
 
 # Recursive "all" directory target.
 server/all: server/CMakeFiles/server_generate_messages.dir/all
-server/all: server/CMakeFiles/server.dir/all
+server/all: server/CMakeFiles/server_server.dir/all
+server/all: server/CMakeFiles/server_client.dir/all
 .PHONY : server/all
 
 # Recursive "preinstall" directory target.
@@ -121,7 +122,8 @@ server/clean: server/CMakeFiles/server_generate_messages_nodejs.dir/clean
 server/clean: server/CMakeFiles/server_gennodejs.dir/clean
 server/clean: server/CMakeFiles/server_generate_messages_py.dir/clean
 server/clean: server/CMakeFiles/server_genpy.dir/clean
-server/clean: server/CMakeFiles/server.dir/clean
+server/clean: server/CMakeFiles/server_server.dir/clean
+server/clean: server/CMakeFiles/server_client.dir/clean
 .PHONY : server/clean
 
 #=============================================================================
@@ -992,49 +994,94 @@ server/CMakeFiles/server_genpy.dir/clean:
 .PHONY : server/CMakeFiles/server_genpy.dir/clean
 
 #=============================================================================
-# Target rules for target server/CMakeFiles/server.dir
+# Target rules for target server/CMakeFiles/server_server.dir
 
 # All Build rule for target.
-server/CMakeFiles/server.dir/all: server/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-server/CMakeFiles/server.dir/all: server/CMakeFiles/roscpp_generate_messages_eus.dir/all
-server/CMakeFiles/server.dir/all: server/CMakeFiles/roscpp_generate_messages_lisp.dir/all
-server/CMakeFiles/server.dir/all: server/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
-server/CMakeFiles/server.dir/all: server/CMakeFiles/roscpp_generate_messages_py.dir/all
-server/CMakeFiles/server.dir/all: server/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-server/CMakeFiles/server.dir/all: server/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
-server/CMakeFiles/server.dir/all: server/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-server/CMakeFiles/server.dir/all: server/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
-server/CMakeFiles/server.dir/all: server/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
-server/CMakeFiles/server.dir/all: server/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-server/CMakeFiles/server.dir/all: server/CMakeFiles/std_msgs_generate_messages_eus.dir/all
-server/CMakeFiles/server.dir/all: server/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-server/CMakeFiles/server.dir/all: server/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
-server/CMakeFiles/server.dir/all: server/CMakeFiles/std_msgs_generate_messages_py.dir/all
-server/CMakeFiles/server.dir/all: server/CMakeFiles/server_generate_messages_cpp.dir/all
-server/CMakeFiles/server.dir/all: server/CMakeFiles/server_generate_messages_eus.dir/all
-server/CMakeFiles/server.dir/all: server/CMakeFiles/server_generate_messages_lisp.dir/all
-server/CMakeFiles/server.dir/all: server/CMakeFiles/server_generate_messages_nodejs.dir/all
-server/CMakeFiles/server.dir/all: server/CMakeFiles/server_generate_messages_py.dir/all
-	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/depend
-	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jquark/ROS/c2/service/build/CMakeFiles --progress-num=9,10 "Built target server"
-.PHONY : server/CMakeFiles/server.dir/all
+server/CMakeFiles/server_server.dir/all: server/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+server/CMakeFiles/server_server.dir/all: server/CMakeFiles/roscpp_generate_messages_eus.dir/all
+server/CMakeFiles/server_server.dir/all: server/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+server/CMakeFiles/server_server.dir/all: server/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+server/CMakeFiles/server_server.dir/all: server/CMakeFiles/roscpp_generate_messages_py.dir/all
+server/CMakeFiles/server_server.dir/all: server/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+server/CMakeFiles/server_server.dir/all: server/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+server/CMakeFiles/server_server.dir/all: server/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+server/CMakeFiles/server_server.dir/all: server/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+server/CMakeFiles/server_server.dir/all: server/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+server/CMakeFiles/server_server.dir/all: server/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+server/CMakeFiles/server_server.dir/all: server/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+server/CMakeFiles/server_server.dir/all: server/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+server/CMakeFiles/server_server.dir/all: server/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+server/CMakeFiles/server_server.dir/all: server/CMakeFiles/std_msgs_generate_messages_py.dir/all
+server/CMakeFiles/server_server.dir/all: server/CMakeFiles/server_generate_messages_cpp.dir/all
+server/CMakeFiles/server_server.dir/all: server/CMakeFiles/server_generate_messages_eus.dir/all
+server/CMakeFiles/server_server.dir/all: server/CMakeFiles/server_generate_messages_lisp.dir/all
+server/CMakeFiles/server_server.dir/all: server/CMakeFiles/server_generate_messages_nodejs.dir/all
+server/CMakeFiles/server_server.dir/all: server/CMakeFiles/server_generate_messages_py.dir/all
+	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/server_server.dir/build.make server/CMakeFiles/server_server.dir/depend
+	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/server_server.dir/build.make server/CMakeFiles/server_server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jquark/ROS/c2/service/build/CMakeFiles --progress-num=18,19 "Built target server_server"
+.PHONY : server/CMakeFiles/server_server.dir/all
 
 # Build rule for subdir invocation for target.
-server/CMakeFiles/server.dir/rule: cmake_check_build_system
+server/CMakeFiles/server_server.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jquark/ROS/c2/service/build/CMakeFiles 9
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server/CMakeFiles/server.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server/CMakeFiles/server_server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/jquark/ROS/c2/service/build/CMakeFiles 0
-.PHONY : server/CMakeFiles/server.dir/rule
+.PHONY : server/CMakeFiles/server_server.dir/rule
 
 # Convenience name for target.
-server: server/CMakeFiles/server.dir/rule
-.PHONY : server
+server_server: server/CMakeFiles/server_server.dir/rule
+.PHONY : server_server
 
 # clean rule for target.
-server/CMakeFiles/server.dir/clean:
-	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/server.dir/build.make server/CMakeFiles/server.dir/clean
-.PHONY : server/CMakeFiles/server.dir/clean
+server/CMakeFiles/server_server.dir/clean:
+	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/server_server.dir/build.make server/CMakeFiles/server_server.dir/clean
+.PHONY : server/CMakeFiles/server_server.dir/clean
+
+#=============================================================================
+# Target rules for target server/CMakeFiles/server_client.dir
+
+# All Build rule for target.
+server/CMakeFiles/server_client.dir/all: server/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+server/CMakeFiles/server_client.dir/all: server/CMakeFiles/roscpp_generate_messages_eus.dir/all
+server/CMakeFiles/server_client.dir/all: server/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+server/CMakeFiles/server_client.dir/all: server/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+server/CMakeFiles/server_client.dir/all: server/CMakeFiles/roscpp_generate_messages_py.dir/all
+server/CMakeFiles/server_client.dir/all: server/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+server/CMakeFiles/server_client.dir/all: server/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+server/CMakeFiles/server_client.dir/all: server/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+server/CMakeFiles/server_client.dir/all: server/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+server/CMakeFiles/server_client.dir/all: server/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+server/CMakeFiles/server_client.dir/all: server/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+server/CMakeFiles/server_client.dir/all: server/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+server/CMakeFiles/server_client.dir/all: server/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+server/CMakeFiles/server_client.dir/all: server/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+server/CMakeFiles/server_client.dir/all: server/CMakeFiles/std_msgs_generate_messages_py.dir/all
+server/CMakeFiles/server_client.dir/all: server/CMakeFiles/server_generate_messages_cpp.dir/all
+server/CMakeFiles/server_client.dir/all: server/CMakeFiles/server_generate_messages_eus.dir/all
+server/CMakeFiles/server_client.dir/all: server/CMakeFiles/server_generate_messages_lisp.dir/all
+server/CMakeFiles/server_client.dir/all: server/CMakeFiles/server_generate_messages_nodejs.dir/all
+server/CMakeFiles/server_client.dir/all: server/CMakeFiles/server_generate_messages_py.dir/all
+	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/server_client.dir/build.make server/CMakeFiles/server_client.dir/depend
+	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/server_client.dir/build.make server/CMakeFiles/server_client.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jquark/ROS/c2/service/build/CMakeFiles --progress-num=9,10 "Built target server_client"
+.PHONY : server/CMakeFiles/server_client.dir/all
+
+# Build rule for subdir invocation for target.
+server/CMakeFiles/server_client.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jquark/ROS/c2/service/build/CMakeFiles 9
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server/CMakeFiles/server_client.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jquark/ROS/c2/service/build/CMakeFiles 0
+.PHONY : server/CMakeFiles/server_client.dir/rule
+
+# Convenience name for target.
+server_client: server/CMakeFiles/server_client.dir/rule
+.PHONY : server_client
+
+# clean rule for target.
+server/CMakeFiles/server_client.dir/clean:
+	$(MAKE) $(MAKESILENT) -f server/CMakeFiles/server_client.dir/build.make server/CMakeFiles/server_client.dir/clean
+.PHONY : server/CMakeFiles/server_client.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
