@@ -493,6 +493,44 @@ get_param/fast:
 	cd /home/jquark/ROS/c2/parameter_server/build && $(MAKE) $(MAKESILENT) -f parameter_server/CMakeFiles/get_param.dir/build.make parameter_server/CMakeFiles/get_param.dir/build
 .PHONY : get_param/fast
 
+# Convenience name for target.
+parameter_server/CMakeFiles/del_param.dir/rule:
+	cd /home/jquark/ROS/c2/parameter_server/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 parameter_server/CMakeFiles/del_param.dir/rule
+.PHONY : parameter_server/CMakeFiles/del_param.dir/rule
+
+# Convenience name for target.
+del_param: parameter_server/CMakeFiles/del_param.dir/rule
+.PHONY : del_param
+
+# fast build rule for target.
+del_param/fast:
+	cd /home/jquark/ROS/c2/parameter_server/build && $(MAKE) $(MAKESILENT) -f parameter_server/CMakeFiles/del_param.dir/build.make parameter_server/CMakeFiles/del_param.dir/build
+.PHONY : del_param/fast
+
+src/param_del.o: src/param_del.cpp.o
+.PHONY : src/param_del.o
+
+# target to build an object file
+src/param_del.cpp.o:
+	cd /home/jquark/ROS/c2/parameter_server/build && $(MAKE) $(MAKESILENT) -f parameter_server/CMakeFiles/del_param.dir/build.make parameter_server/CMakeFiles/del_param.dir/src/param_del.cpp.o
+.PHONY : src/param_del.cpp.o
+
+src/param_del.i: src/param_del.cpp.i
+.PHONY : src/param_del.i
+
+# target to preprocess a source file
+src/param_del.cpp.i:
+	cd /home/jquark/ROS/c2/parameter_server/build && $(MAKE) $(MAKESILENT) -f parameter_server/CMakeFiles/del_param.dir/build.make parameter_server/CMakeFiles/del_param.dir/src/param_del.cpp.i
+.PHONY : src/param_del.cpp.i
+
+src/param_del.s: src/param_del.cpp.s
+.PHONY : src/param_del.s
+
+# target to generate assembly for a file
+src/param_del.cpp.s:
+	cd /home/jquark/ROS/c2/parameter_server/build && $(MAKE) $(MAKESILENT) -f parameter_server/CMakeFiles/del_param.dir/build.make parameter_server/CMakeFiles/del_param.dir/src/param_del.cpp.s
+.PHONY : src/param_del.cpp.s
+
 src/param_get.o: src/param_get.cpp.o
 .PHONY : src/param_get.o
 
@@ -575,8 +613,12 @@ help:
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
+	@echo "... del_param"
 	@echo "... get_param"
 	@echo "... set_param"
+	@echo "... src/param_del.o"
+	@echo "... src/param_del.i"
+	@echo "... src/param_del.s"
 	@echo "... src/param_get.o"
 	@echo "... src/param_get.i"
 	@echo "... src/param_get.s"

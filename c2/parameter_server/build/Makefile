@@ -548,6 +548,19 @@ get_param/fast:
 	$(MAKE) $(MAKESILENT) -f parameter_server/CMakeFiles/get_param.dir/build.make parameter_server/CMakeFiles/get_param.dir/build
 .PHONY : get_param/fast
 
+#=============================================================================
+# Target rules for targets named del_param
+
+# Build rule for target.
+del_param: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 del_param
+.PHONY : del_param
+
+# fast build rule for target.
+del_param/fast:
+	$(MAKE) $(MAKESILENT) -f parameter_server/CMakeFiles/del_param.dir/build.make parameter_server/CMakeFiles/del_param.dir/build
+.PHONY : del_param/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -588,6 +601,7 @@ help:
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... tests"
+	@echo "... del_param"
 	@echo "... get_param"
 	@echo "... set_param"
 .PHONY : help

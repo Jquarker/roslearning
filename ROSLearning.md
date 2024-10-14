@@ -1,5 +1,8 @@
-# ROS c1基础知识
+# ROS 
 
+setlocale(LC_ALL,"") 避免中文乱码
+
+# c1基础知识
 ## 工作空间
 创建工作空间  
 
@@ -164,3 +167,27 @@ server和client
 借助argc和argv实现优化实现，启动程序时附带参数
 atoi 字符串转换为整型
 
+客户端挂起等待服务端启动
+client.waitForExistence();
+ros::service::waitForService("addInt");
+
+## 参数服务器
+不同节点支架的数据共享
+独立于节点的一个公共空间
+应用场景: 导航的路径规划(全局路径规划和本地路径规划)
+
+以共享方式实现不同节点之间数据共享的方式
+存储一些多节点共享数据
+
+Master Talker Listener
+非二进制简单数据
+- 32-bit integers
+- booleans
+- strings
+- doubles
+- iso8601 dates (YYYY-MM-DD)
+- lists
+- base64-encoded binary data
+- 字典
+
+rosparam
