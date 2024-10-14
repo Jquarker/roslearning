@@ -190,4 +190,4 @@ Master Talker Listener
 - base64-encoded binary data
 - 字典
 
-rosparam
+rosparam list 
