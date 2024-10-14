@@ -523,17 +523,30 @@ dynamic_reconfigure_gencfg/fast:
 .PHONY : dynamic_reconfigure_gencfg/fast
 
 #=============================================================================
-# Target rules for targets named parameter_server
+# Target rules for targets named set_param
 
 # Build rule for target.
-parameter_server: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 parameter_server
-.PHONY : parameter_server
+set_param: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 set_param
+.PHONY : set_param
 
 # fast build rule for target.
-parameter_server/fast:
-	$(MAKE) $(MAKESILENT) -f parameter_server/CMakeFiles/parameter_server.dir/build.make parameter_server/CMakeFiles/parameter_server.dir/build
-.PHONY : parameter_server/fast
+set_param/fast:
+	$(MAKE) $(MAKESILENT) -f parameter_server/CMakeFiles/set_param.dir/build.make parameter_server/CMakeFiles/set_param.dir/build
+.PHONY : set_param/fast
+
+#=============================================================================
+# Target rules for targets named get_param
+
+# Build rule for target.
+get_param: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 get_param
+.PHONY : get_param
+
+# fast build rule for target.
+get_param/fast:
+	$(MAKE) $(MAKESILENT) -f parameter_server/CMakeFiles/get_param.dir/build.make parameter_server/CMakeFiles/get_param.dir/build
+.PHONY : get_param/fast
 
 # Help Target
 help:
@@ -575,7 +588,8 @@ help:
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... tests"
-	@echo "... parameter_server"
+	@echo "... get_param"
+	@echo "... set_param"
 .PHONY : help
 
 

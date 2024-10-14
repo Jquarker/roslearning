@@ -466,25 +466,63 @@ dynamic_reconfigure_gencfg/fast:
 .PHONY : dynamic_reconfigure_gencfg/fast
 
 # Convenience name for target.
-parameter_server/CMakeFiles/parameter_server.dir/rule:
-	cd /home/jquark/ROS/c2/parameter_server/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 parameter_server/CMakeFiles/parameter_server.dir/rule
-.PHONY : parameter_server/CMakeFiles/parameter_server.dir/rule
+parameter_server/CMakeFiles/set_param.dir/rule:
+	cd /home/jquark/ROS/c2/parameter_server/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 parameter_server/CMakeFiles/set_param.dir/rule
+.PHONY : parameter_server/CMakeFiles/set_param.dir/rule
 
 # Convenience name for target.
-parameter_server: parameter_server/CMakeFiles/parameter_server.dir/rule
-.PHONY : parameter_server
+set_param: parameter_server/CMakeFiles/set_param.dir/rule
+.PHONY : set_param
 
 # fast build rule for target.
-parameter_server/fast:
-	cd /home/jquark/ROS/c2/parameter_server/build && $(MAKE) $(MAKESILENT) -f parameter_server/CMakeFiles/parameter_server.dir/build.make parameter_server/CMakeFiles/parameter_server.dir/build
-.PHONY : parameter_server/fast
+set_param/fast:
+	cd /home/jquark/ROS/c2/parameter_server/build && $(MAKE) $(MAKESILENT) -f parameter_server/CMakeFiles/set_param.dir/build.make parameter_server/CMakeFiles/set_param.dir/build
+.PHONY : set_param/fast
+
+# Convenience name for target.
+parameter_server/CMakeFiles/get_param.dir/rule:
+	cd /home/jquark/ROS/c2/parameter_server/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 parameter_server/CMakeFiles/get_param.dir/rule
+.PHONY : parameter_server/CMakeFiles/get_param.dir/rule
+
+# Convenience name for target.
+get_param: parameter_server/CMakeFiles/get_param.dir/rule
+.PHONY : get_param
+
+# fast build rule for target.
+get_param/fast:
+	cd /home/jquark/ROS/c2/parameter_server/build && $(MAKE) $(MAKESILENT) -f parameter_server/CMakeFiles/get_param.dir/build.make parameter_server/CMakeFiles/get_param.dir/build
+.PHONY : get_param/fast
+
+src/param_get.o: src/param_get.cpp.o
+.PHONY : src/param_get.o
+
+# target to build an object file
+src/param_get.cpp.o:
+	cd /home/jquark/ROS/c2/parameter_server/build && $(MAKE) $(MAKESILENT) -f parameter_server/CMakeFiles/get_param.dir/build.make parameter_server/CMakeFiles/get_param.dir/src/param_get.cpp.o
+.PHONY : src/param_get.cpp.o
+
+src/param_get.i: src/param_get.cpp.i
+.PHONY : src/param_get.i
+
+# target to preprocess a source file
+src/param_get.cpp.i:
+	cd /home/jquark/ROS/c2/parameter_server/build && $(MAKE) $(MAKESILENT) -f parameter_server/CMakeFiles/get_param.dir/build.make parameter_server/CMakeFiles/get_param.dir/src/param_get.cpp.i
+.PHONY : src/param_get.cpp.i
+
+src/param_get.s: src/param_get.cpp.s
+.PHONY : src/param_get.s
+
+# target to generate assembly for a file
+src/param_get.cpp.s:
+	cd /home/jquark/ROS/c2/parameter_server/build && $(MAKE) $(MAKESILENT) -f parameter_server/CMakeFiles/get_param.dir/build.make parameter_server/CMakeFiles/get_param.dir/src/param_get.cpp.s
+.PHONY : src/param_get.cpp.s
 
 src/param_set.o: src/param_set.cpp.o
 .PHONY : src/param_set.o
 
 # target to build an object file
 src/param_set.cpp.o:
-	cd /home/jquark/ROS/c2/parameter_server/build && $(MAKE) $(MAKESILENT) -f parameter_server/CMakeFiles/parameter_server.dir/build.make parameter_server/CMakeFiles/parameter_server.dir/src/param_set.cpp.o
+	cd /home/jquark/ROS/c2/parameter_server/build && $(MAKE) $(MAKESILENT) -f parameter_server/CMakeFiles/set_param.dir/build.make parameter_server/CMakeFiles/set_param.dir/src/param_set.cpp.o
 .PHONY : src/param_set.cpp.o
 
 src/param_set.i: src/param_set.cpp.i
@@ -492,7 +530,7 @@ src/param_set.i: src/param_set.cpp.i
 
 # target to preprocess a source file
 src/param_set.cpp.i:
-	cd /home/jquark/ROS/c2/parameter_server/build && $(MAKE) $(MAKESILENT) -f parameter_server/CMakeFiles/parameter_server.dir/build.make parameter_server/CMakeFiles/parameter_server.dir/src/param_set.cpp.i
+	cd /home/jquark/ROS/c2/parameter_server/build && $(MAKE) $(MAKESILENT) -f parameter_server/CMakeFiles/set_param.dir/build.make parameter_server/CMakeFiles/set_param.dir/src/param_set.cpp.i
 .PHONY : src/param_set.cpp.i
 
 src/param_set.s: src/param_set.cpp.s
@@ -500,7 +538,7 @@ src/param_set.s: src/param_set.cpp.s
 
 # target to generate assembly for a file
 src/param_set.cpp.s:
-	cd /home/jquark/ROS/c2/parameter_server/build && $(MAKE) $(MAKESILENT) -f parameter_server/CMakeFiles/parameter_server.dir/build.make parameter_server/CMakeFiles/parameter_server.dir/src/param_set.cpp.s
+	cd /home/jquark/ROS/c2/parameter_server/build && $(MAKE) $(MAKESILENT) -f parameter_server/CMakeFiles/set_param.dir/build.make parameter_server/CMakeFiles/set_param.dir/src/param_set.cpp.s
 .PHONY : src/param_set.cpp.s
 
 # Help Target
@@ -537,7 +575,11 @@ help:
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
-	@echo "... parameter_server"
+	@echo "... get_param"
+	@echo "... set_param"
+	@echo "... src/param_get.o"
+	@echo "... src/param_get.i"
+	@echo "... src/param_get.s"
 	@echo "... src/param_set.o"
 	@echo "... src/param_set.i"
 	@echo "... src/param_set.s"

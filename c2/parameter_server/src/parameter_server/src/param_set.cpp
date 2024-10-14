@@ -18,14 +18,14 @@ int main(int argc,char* argv[])
     // 新增参数
     //1. nh
     nh.setParam("type","sentory1");
-    nh.setParam("radius",0.15*0.20);
+    nh.setParam("radius",20);
     //2.ros::param
     ros::param::set("type_param","sentory2");
-    ros::param::set("radius_param",0.15);
+    ros::param::set("radius_param",20);
     // 修改参数
     //即重新使用函数对上文参数进行覆盖
-    nh.setParam("radius",0.2);
-    ros::param::set("radius_paeram",0.2);
+    nh.setParam("radius",30);
+    ros::param::set("radius_paeram",30);
     ros::spin();
     return 0;
 }
