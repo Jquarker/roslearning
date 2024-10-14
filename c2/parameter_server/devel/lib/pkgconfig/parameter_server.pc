@@ -1,0 +1,8 @@
+prefix=/home/jquark/ROS/c2/parameter_server/devel
+
+Name: parameter_server
+Description: Description of parameter_server
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

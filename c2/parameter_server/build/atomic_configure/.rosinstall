@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/jquark/ROS/c2/parameter_server/devel/setup.sh
