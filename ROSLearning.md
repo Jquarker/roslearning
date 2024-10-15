@@ -191,3 +191,19 @@ Master Talker Listener
 - 字典
 
 rosparam list 
+
+rosnode : 操作节点
+rostopic : 操作话题
+rosservice : 操作服务
+rosmsg : 操作msg消息
+rossrv : 操作srv消息
+rosparam : 操作参数
+
+| Topic(msg) | Service(srv) |
+|-----|-----|
+| 发布订阅 | 请求相应 |
+|异步|同步|
+|有缓冲|无缓冲|
+|多对多弱时效|一对多强时效|
+|雷达 里程计|拍照语音识别|
+
