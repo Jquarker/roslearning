@@ -1,0 +1,14 @@
+<launch>
+<!-- 在参数服务器中添加机器人模型描述   -->
+    <param name="robot_description" textfile="$(find urdf1)/urdf/urdf/demo1.urdf" />
+    <!-- 启动机器人状态发布节点 -->
+    <!-- <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" /> -->
+    <!-- 调用config目录下的demo1.rviz文件 -->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find urdf1)/config/demo1.rviz" /> 
+    <!-- 启动关节状态发布节点 -->
+    <node name="joint_state_publisher" pkg = "joint_state_publisher" type="joint_state_publisher" />
+    <!-- 启动机器人状态发布节点 -->
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+    <!-- 启动关节状态发布节点 -->
+    <node name="joint_state_publisher_gui" pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" />
+</launch>

@@ -1,0 +1,2 @@
+
+-DCATKIN_DEVEL_PREFIX=/home/jquark/ROS/c6/devel -DCMAKE_INSTALL_PREFIX=/home/jquark/ROS/c6/install -G Unix Makefiles
