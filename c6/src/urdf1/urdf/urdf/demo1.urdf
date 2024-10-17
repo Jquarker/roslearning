@@ -4,31 +4,49 @@
             <geometry >
                 <!-- <cylinder radius="1" length="2" /> -->
                 <!-- <sphere radius="0.5" /> -->
-                <!-- <box size="1 1 1" /> -->
-                <mesh filename="package://urdf1/meshes/autolabor_mini.stl"/>    
+                <box size="1 1 1" />
+                <!-- <mesh filename="package://urdf1/meshes/autolabor_mini.stl"/>     -->
             </geometry>
-            <origin xyz= "3 0 0" rpy="1.58 0 0"/>
+            <origin xyz= "0 0 0" rpy="0 0 0"/>
             <material name = "white">
                 <color rgba = "1 1 1 0.5"/>
             </material> 
         </visual>
     </link>
-    <link name="camera_link">
+    <link name="stick">
         <visual>
             <geometry>
-                <cylinder radius="0.01" length="0.1"/>
+                <cylinder radius="0.01" length="0.5"/>
             </geometry>
             <material name="blue">
                 <color rgba="0 0.4 0.8 1"/>
             </material>
-            <origin xyz="3 0 0.05" rpy="0 0 0"/>   
+            <origin xyz="0 0 0.25" rpy="0 0 0"/>   
         </visual>
-    </link>     
-    <joint name="base_link_to_map" type="fixed">
+    </link> 
+    <link name="camera_link">
+        <visual>
+            <geometry>
+                <cylinder radius="0.2" length="0.05"/>
+            </geometry>
+            <material name="black">
+                <color rgba="0 0 0 0.5"/>
+            </material>
+            <origin xyz="0 0 0.25" rpy="0 0 0"/>   
+        </visual>
+    </link>    
+    <joint name="stick_to_base_link" type="fixed">
         <parent link="base_link"/>
-        <child link="camera_link"/>
-        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <child link="stick"/>
+        <origin xyz="0 0 0.5" rpy="0 0 0"/>
     </joint>
+    <joint name="camera_link_to_stick" type="continuous">    
+        <parent link="stick"/>
+        <child link="camera_link"/>
+        <axis xyz="0 1 0"/>
+        <origin xyz="0 0 0.275"/>
+        <limit lower="-1.57" upper="1.57" effort="100" velocity="1"/>
+    </joint>    
 </robot>
 
 
