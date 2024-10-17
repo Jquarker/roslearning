@@ -1,0 +1,6 @@
+<robot name="demo2" xmlns:xacro="http://wiki.ros.org/xacro">
+    <xacro:macro name="getSum" params="a b">
+        <result value="${a + b}" />
+    </xacro:macro>
+    <xacro:getSum a="1" b="2" />
+</robot>    
