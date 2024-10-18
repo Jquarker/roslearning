@@ -1,0 +1,7 @@
+<robot name="include_test" xmlns:xacro="http://wiki.ros.org/xacro">
+<!-- 包含底盘，摄像头，雷达的cxacro文件 -->
+    <xacro:include filename="$(find xacrotest)/xacro/base.xacro" />
+    <xacro:include filename="$(find xacrotest)/xacro/camera.xacro" />
+    <xacro:include filename="$(find xacrotest)/xacro/laser.xacro" />   
+</robot>
+
