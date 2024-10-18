@@ -1,8 +1,7 @@
-# ROS 
+# ROS c1基础知识
 
 setlocale(LC_ALL,"") 避免中文乱码
 
-# c1基础知识
 ## 工作空间
 创建工作空间  
 
@@ -207,3 +206,18 @@ rosparam : 操作参数
 |多对多弱时效|一对多强时效|
 |雷达 里程计|拍照语音识别|
 
+# ROS c6仿真
+
+ URDF 机器人建模  
+导入urdf包名，导入xacro(对urdf命令的简化)
+meshes皮肤
+
+ Gazebo 创建仿真环境  
+
+ Rviz 感知环境  
+使用rviz：配置urdf文件和launch文件，调整name和size(urdf) 调整launch文件: name textfile(param),name,pkg,type,/args(node)
+
+## urdf语法
+link连杆 joint关节
+link 刚体部分 惯性矩阵visual，碰撞参数collision
+<!-- rpy采用弧度制 -->
