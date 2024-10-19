@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/jquark/ROS/c6/gazebo/devel/setup.sh

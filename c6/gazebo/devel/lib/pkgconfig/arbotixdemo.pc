@@ -1,0 +1,8 @@
+prefix=/home/jquark/ROS/c6/gazebo/devel
+
+Name: arbotixdemo
+Description: Description of arbotixdemo
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

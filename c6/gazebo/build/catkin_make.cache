@@ -1,0 +1,2 @@
+arbotix_ros/arbotix:arbotix_ros/arbotix_controllers:arbotix_ros/arbotix_firmware:arbotix_ros/arbotix_msgs:arbotix_ros/arbotix_python:arbotix_ros/arbotix_sensors:arbotixdemo
+-DCMAKE_BUILD_TYPE=RelWithDebInfo -DCATKIN_DEVEL_PREFIX=/home/jquark/ROS/c6/gazebo/devel -DCMAKE_INSTALL_PREFIX=/home/jquark/ROS/c6/gazebo/install -G Unix Makefiles
