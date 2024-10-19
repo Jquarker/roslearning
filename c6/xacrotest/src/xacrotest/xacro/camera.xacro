@@ -19,9 +19,10 @@
         </visual>
     </link>
 
-    <joint name="camera2base_link" type="fixed">
+    <joint name="camera2base_link" type="revolute">
         <parent link="base_link" />
         <child link="camera" />
         <origin xyz="${camera_x} ${camera_y} ${camera_z}" />
+        <axis xyz="0 0 1" />
     </joint>
 </robot>

@@ -105,10 +105,11 @@
       <material name="black"/>
     </visual>
   </link>
-  <joint name="camera2base_link" type="fixed">
+  <joint name="camera2base_link" type="revolute">
     <parent link="base_link"/>
     <child link="camera"/>
     <origin xyz="0.08 0.0 0.052500000000000005"/>
+    <axis xyz="0 0 1"/>
   </joint>
   <!-- 支架安装的z坐标:底盘高度 / 2 + 支架高度 / 2  -->
   <link name="support">
