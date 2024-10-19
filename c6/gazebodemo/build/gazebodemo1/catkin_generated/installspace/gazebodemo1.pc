@@ -1,0 +1,8 @@
+prefix=/home/jquark/roslearning/c6/gazebodemo/install
+
+Name: gazebodemo1
+Description: Description of gazebodemo1
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

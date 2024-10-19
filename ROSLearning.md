@@ -223,3 +223,7 @@ link 刚体部分 惯性矩阵visual，碰撞参数collision
 <!-- rpy采用弧度制 -->
 
 ## xacro语法
+
+## gazebo
+urdf集成gazebo和xacro生成有差别
+gazebo有自己的颜色设置

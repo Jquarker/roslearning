@@ -1,0 +1,17 @@
+<launch>
+    <!-- 在参数服务器中载入urdf -->
+    <param name="robot_description" command="$(find gazbodemo1)/urdf/hw.urdf" />
+    
+    <!-- 启动gazebo -->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="paused" value="false"/>
+        <arg name="use_sim_time" value="true"/>
+        <arg name="gui" value="true"/>
+        <arg name="headless" value="false"/>
+        <arg name="debug" value="false"/>
+    </include>
+    
+    <!-- gazebo中添加机器人模型 -->
+    <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -model your_robot" />
+</launch>
+
