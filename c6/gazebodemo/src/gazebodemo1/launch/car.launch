@@ -10,7 +10,7 @@
     <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -model your_robot" />
     <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
     <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
-    <node name="kinect" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -model kinect" />
+    <!-- <node name="kinect" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -model kinect" /> -->
     <!-- 启动 rviz -->
     <node name="rviz" pkg="rviz" type="rviz" args="-d $(find gazebodemo1)/config/mycar.rviz"/>
     <node name="teleop_twist_keyboard" pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" launch-prefix="gnome-terminal --command"/>

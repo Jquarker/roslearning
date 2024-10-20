@@ -1,0 +1,2 @@
+
+-DCATKIN_DEVEL_PREFIX=/home/jquark/roslearning/c7/navigation/devel -DCMAKE_INSTALL_PREFIX=/home/jquark/roslearning/c7/navigation/install -G Unix Makefiles

@@ -1,0 +1,16 @@
+<launch>
+    <!-- 在参数服务器中载入urdf -->
+    <param name="robot_description" command="$(find xacro)/xacro $(find robodemo)/urdf/include.xacro" />
+    
+    <!-- 启动gazebo -->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="world_name" value="$(find robodemo)/worlds/world.world" />
+    </include>
+    <!-- gazebo中添加机器人模型 -->
+    <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -model your_robot" />
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+    <!-- 启动 rviz -->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find robodemo)/config/mycar.rviz"/>
+    <node name="teleop_twist_keyboard" pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" launch-prefix="gnome-terminal --command"/>
+</launch>

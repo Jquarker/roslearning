@@ -1,0 +1,33 @@
+<robot name="mycar">
+    <link name="base_link">
+        <!-- 可视化部份 -->
+        <visual>
+            <geometry>
+                <box size="0.5 0.2 0.1" />
+            </geometry>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <material name="yellow">
+                <color rgba="0.5 0.3 0.0 1" />
+            </material>
+        </visual>
+        <!-- 连杆的碰撞属性 -->
+        <collision>
+            <geometry>
+                <box size="0.5 0.2 0.1" />
+            </geometry>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+        </collision>
+        <!-- 连杆的惯性矩阵 -->
+        <inertial>
+            <origin xyz="0 0 0" />
+            <!-- 质量 -->
+            <mass value="6" />
+            <!-- 不能自己设置 -->
+            <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1" />
+        </inertial>
+    </link>
+    <!-- gazebo颜色设置 -->
+    <gazebo reference="base_link">
+        <material>Gazebo/Black</material>
+    </gazebo>
+</robot>

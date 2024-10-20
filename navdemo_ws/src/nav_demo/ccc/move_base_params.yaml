@@ -1,0 +1,7 @@
+shutdown_costmaps: False
+controller_frequency: 5
+controller_patience: 3.0
+planner_frequency: 5.0
+oscillation_time: 3.0
+oscillation_distance: 0.2
+clearing_rotation_allowed: False
