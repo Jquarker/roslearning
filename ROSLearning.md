@@ -129,7 +129,7 @@ talker(topic+foo)和listener(topic)借助master进行连接，后续talker和lis
      发布逻辑与数据
 
 roscore
-source ./devel/setup.zsh  
+source ./devel/setup.zsh  Z
 rosrun topic talker_demo1
 
 命令验证 rostopic echo 话题名称
@@ -227,3 +227,8 @@ link 刚体部分 惯性矩阵visual，碰撞参数collision
 ## gazebo
 urdf集成gazebo和xacro生成有差别
 gazebo有自己的颜色设置
+较之于 rviz，gazebo在集成 URDF 时，需要做些许修改，
+e.g.:必须添加 collision 碰撞属性相关参数、必须添加 inertial 惯性矩阵相关参数，
+另外，如果直接移植 Rviz 中机器人的颜色设置是没有显示的，颜色设置也必须做相应的变更。
+
+在gazebo中，编写好ros_control之后可以启动gazebo，同时借助teleop_twist_keyboard来使用键盘来控制机器人移动

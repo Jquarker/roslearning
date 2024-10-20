@@ -1,8 +1,8 @@
-# Install script for directory: /home/jquark/ROS/c2/topic/src/topic
+# Install script for directory: /home/jquark/roslearning/c2/topic/src/topic
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/jquark/ROS/c2/topic/install")
+  set(CMAKE_INSTALL_PREFIX "/home/jquark/roslearning/c2/topic/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -37,59 +37,54 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
-# Set default install directory permissions.
-if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/topic/msg" TYPE FILE FILES "/home/jquark/roslearning/c2/topic/src/topic/msg/coordinate.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/topic/msg" TYPE FILE FILES "/home/jquark/ROS/c2/topic/src/topic/msg/coordinate.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/topic/cmake" TYPE FILE FILES "/home/jquark/roslearning/c2/topic/build/topic/catkin_generated/installspace/topic-msg-paths.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/topic/cmake" TYPE FILE FILES "/home/jquark/ROS/c2/topic/build/topic/catkin_generated/installspace/topic-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/jquark/roslearning/c2/topic/devel/include/topic")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/jquark/ROS/c2/topic/devel/include/topic")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/jquark/roslearning/c2/topic/devel/share/roseus/ros/topic")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/jquark/ROS/c2/topic/devel/share/roseus/ros/topic")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/jquark/roslearning/c2/topic/devel/share/common-lisp/ros/topic")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/jquark/ROS/c2/topic/devel/share/common-lisp/ros/topic")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/jquark/roslearning/c2/topic/devel/share/gennodejs/ros/topic")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/jquark/ROS/c2/topic/devel/share/gennodejs/ros/topic")
+  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/jquark/roslearning/c2/topic/devel/lib/python3/dist-packages/topic")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/jquark/ROS/c2/topic/devel/lib/python3/dist-packages/topic")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/jquark/roslearning/c2/topic/devel/lib/python3/dist-packages/topic")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/jquark/ROS/c2/topic/devel/lib/python3/dist-packages/topic")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/jquark/roslearning/c2/topic/build/topic/catkin_generated/installspace/topic.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/jquark/ROS/c2/topic/build/topic/catkin_generated/installspace/topic.pc")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/topic/cmake" TYPE FILE FILES "/home/jquark/ROS/c2/topic/build/topic/catkin_generated/installspace/topic-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/topic/cmake" TYPE FILE FILES "/home/jquark/roslearning/c2/topic/build/topic/catkin_generated/installspace/topic-msg-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/topic/cmake" TYPE FILE FILES
-    "/home/jquark/ROS/c2/topic/build/topic/catkin_generated/installspace/topicConfig.cmake"
-    "/home/jquark/ROS/c2/topic/build/topic/catkin_generated/installspace/topicConfig-version.cmake"
+    "/home/jquark/roslearning/c2/topic/build/topic/catkin_generated/installspace/topicConfig.cmake"
+    "/home/jquark/roslearning/c2/topic/build/topic/catkin_generated/installspace/topicConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/topic" TYPE FILE FILES "/home/jquark/ROS/c2/topic/src/topic/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/topic" TYPE FILE FILES "/home/jquark/roslearning/c2/topic/src/topic/package.xml")
 endif()
 

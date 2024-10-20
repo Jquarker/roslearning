@@ -1,4 +1,4 @@
-prefix=/home/jquark/ROS/c2/topic/install
+prefix=/home/jquark/roslearning/c2/topic/install
 
 Name: topic
 Description: Description of topic

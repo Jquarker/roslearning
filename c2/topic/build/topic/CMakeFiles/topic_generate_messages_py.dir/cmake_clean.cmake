@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/jquark/ROS/c2/topic/devel/lib/python3/dist-packages/topic/msg/__init__.py"
-  "/home/jquark/ROS/c2/topic/devel/lib/python3/dist-packages/topic/msg/_coordinate.py"
+  "/home/jquark/roslearning/c2/topic/devel/lib/python3/dist-packages/topic/msg/__init__.py"
+  "/home/jquark/roslearning/c2/topic/devel/lib/python3/dist-packages/topic/msg/_coordinate.py"
   "CMakeFiles/topic_generate_messages_py"
 )
 

@@ -7,7 +7,9 @@
     ],
     "cmake.sourceDirectory": "/home/jquark/ROS/vscodetest/src/vscodetest",
     "files.associations": {
-        "sstream": "cpp"
+        "sstream": "cpp",
+        "iosfwd": "cpp",
+        "fstream": "cpp"
     },
     "cmake.ignoreCMakeListsMissing": true
 }

@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/jquark/ROS/c2/topic/devel/share/common-lisp/ros/topic/msg/coordinate.lisp"
+  "/home/jquark/roslearning/c2/topic/devel/share/common-lisp/ros/topic/msg/coordinate.lisp"
   "CMakeFiles/topic_generate_messages_lisp"
 )
 

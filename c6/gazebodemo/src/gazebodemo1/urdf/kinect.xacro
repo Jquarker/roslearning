@@ -1,0 +1,85 @@
+<!--
+    小车底盘添加Kinect
+-->
+<robot name="my_kinect" xmlns:xacro="http://wiki.ros.org/xacro">
+
+    <!-- Kinect支架 -->
+    <xacro:property name="support_length" value="0.15" /> <!-- 支架长度 -->
+    <xacro:property name="support_radius" value="0.01" /> <!-- 支架半径 -->
+    <xacro:property name="support_x" value="0.0" /> <!-- 支架安装的x坐标 -->
+    <xacro:property name="support_y" value="0.0" /> <!-- 支架安装的y坐标 -->
+    <xacro:property name="support_z" value="${base_link_length / 2 + support_length / 2}" /> <!-- 支架安装的z坐标:底盘高度 / 2 + 支架高度 / 2  -->
+
+    <xacro:property name="support_m" value="0.02" /> <!-- 支架质量 -->
+
+    <link name="kinect_support">
+        <visual>
+            <geometry>
+                <cylinder radius="${support_radius}" length="${support_length}" />
+            </geometry>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <material name="grey">
+                <color rgba="0.7 0.7 0.7 1.0" />
+            </material>
+        </visual>
+
+        <collision>
+            <geometry>
+                <cylinder radius="${support_radius}" length="${support_length}" />
+            </geometry>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+        </collision>
+
+        <xacro:cylinder_inertial_matrix m="${support_m}" r="${support_radius}" h="${support_length}" />
+
+    </link>
+
+    <joint name="kinect_support2base_link" type="fixed">
+        <parent link="base_link" />
+        <child link="kinect_support" />
+        <origin xyz="${support_x} ${support_y} ${support_z}" />
+    </joint>
+
+    <gazebo reference="kinect_support">
+        <material>Gazebo/Grey</material>
+    </gazebo>
+
+    <!-- Kinect属性 -->
+    <xacro:property name="kinect_length" value="0.06" /> <!-- Kinect长度 -->
+    <xacro:property name="kinect_width" value="0.18" /> <!-- Kinect宽度 -->
+    <xacro:property name="kinect_height" value="0.04" /> <!-- Kinect高度 -->
+    <xacro:property name="kinect_x" value="0.0" /> <!-- Kinect安装的x坐标 -->
+    <xacro:property name="kinect_y" value="0.0" /> <!-- Kinect安装的y坐标 -->
+    <xacro:property name="kinect_z" value="${support_length / 2 + kinect_height / 2}" /> <!-- Kinect安装的z坐标:支架高度 / 2 + Kinect高度 / 2  -->
+
+    <xacro:property name="kinect_m" value="0.1" /> <!-- Kinect质量 -->
+
+    <!-- Kinect关节以及link -->
+    <link name="kinect_link">
+        <visual>
+            <geometry>
+                <box size="${kinect_length} ${kinect_width} ${kinect_height}" />
+            </geometry>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <material name="black">
+                <color rgba="0.0 0.0 0.0 1.0" />
+            </material>
+        </visual>
+        <collision>
+            <geometry>
+                <box size="${kinect_length} ${kinect_width} ${kinect_height}" />
+            </geometry>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+        </collision>
+        <xacro:box_inertial_matrix m="${kinect_m}" l="${kinect_length}" w="${kinect_width}" h="${kinect_height}" />
+    </link>
+
+    <joint name="kinect2support" type="fixed">
+        <parent link="kinect_support" />
+        <child link="kinect_link" />
+        <origin xyz="${kinect_x} ${kinect_y} ${kinect_z}" />
+    </joint>
+    <gazebo reference="kinect_link">
+        <material>Gazebo/Black</material>
+    </gazebo>
+</robot>

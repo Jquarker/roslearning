@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/jquark/ROS/c2/topic/devel/include/topic/coordinate.h"
+  "/home/jquark/roslearning/c2/topic/devel/include/topic/coordinate.h"
   "CMakeFiles/topic_generate_messages_cpp"
 )
 

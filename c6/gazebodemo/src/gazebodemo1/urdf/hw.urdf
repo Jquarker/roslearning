@@ -29,7 +29,6 @@
     </link>
     <!-- gazebo自己的颜色设置 -->
     <gazebo reference="base_link">
-        <material>Gazebo/Black</material>
+        <material>Gazebo/Blue</material>
     </gazebo>
-
 </robot>

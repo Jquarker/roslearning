@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/jquark/ROS/c2/topic/devel/share/gennodejs/ros/topic/msg/coordinate.js"
+  "/home/jquark/roslearning/c2/topic/devel/share/gennodejs/ros/topic/msg/coordinate.js"
   "CMakeFiles/topic_generate_messages_nodejs"
 )
 

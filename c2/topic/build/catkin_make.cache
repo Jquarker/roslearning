@@ -1,2 +1,2 @@
 topic
--DCATKIN_DEVEL_PREFIX=/home/jquark/ROS/c2/topic/devel -DCMAKE_INSTALL_PREFIX=/home/jquark/ROS/c2/topic/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/jquark/roslearning/c2/topic/devel -DCMAKE_INSTALL_PREFIX=/home/jquark/roslearning/c2/topic/install -G Unix Makefiles
